@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Score</title>
+</head>
+<body>
+  <h1>Result</h1>
+  <h2>Word: <%=  @attempt %></h2>
+  <h3><%= @result %></h3>
+  <h3>Your score for this game is: <%= @score %></h3>
+  <h3>Your cumulative score is: <%= session[:user_score] %></h3>
+
+<%= link_to "Play again", new_path %>
+<%= link_to "Clean session", '/clean' %>
+
+
+
+</body>
+</html>
